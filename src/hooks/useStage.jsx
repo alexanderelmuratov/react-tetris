@@ -20,13 +20,13 @@ export const useStage = (player, resetPlayer) => {
         return acc;
       }, []);
 
-    const updateStage = prevStage => {
+    const updateStage = async prevStage => {
       try {
         const newStage = prevStage?.map(row =>
           row.map(cell => (cell[1] === 'clear' ? [0, 'clear'] : cell))
         );
 
-        player.tetromino.forEach((row, y) => {
+        await player.tetromino.forEach((row, y) => {
           console.log('row', row);
           row?.forEach((value, x) => {
             if (value !== 0) {
