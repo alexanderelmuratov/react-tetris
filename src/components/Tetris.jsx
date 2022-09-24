@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import useSound from 'use-sound';
-import mySound from '../audio/kalinka.mp3';
+import mySound from '../../static/audio/kalinka.mp3';
 
 import { createStage, checkCollision } from '../gameHelpers';
 
