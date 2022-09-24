@@ -56,7 +56,7 @@ export const useStage = (player, resetPlayer) => {
         if (!prev) return;
         console.log('prev', prev);
         console.log('updateStage(prev)', updateStage(prev));
-        return updateStage(prev);
+        updateStage(prev);
       } catch (error) {
         console.log('setStage false!!!!!!!!!!!!');
       }
