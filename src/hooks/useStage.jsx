@@ -22,6 +22,7 @@ export const useStage = (player, resetPlayer) => {
 
     const updateStage = prevStage => {
       try {
+        if (!prevStage) return;
         const newStage = prevStage?.map(row =>
           row.map(cell => (cell[1] === 'clear' ? [0, 'clear'] : cell))
         );
@@ -51,12 +52,12 @@ export const useStage = (player, resetPlayer) => {
       }
     };
 
-    setStage(async prev => {
+    setStage(prev => {
       try {
         if (!prev) return;
         console.log('prev', prev);
         console.log('updateStage(prev)', updateStage(prev));
-        await updateStage(prev);
+        return updateStage(prev);
       } catch (error) {
         console.log('setStage false!!!!!!!!!!!!');
       }
