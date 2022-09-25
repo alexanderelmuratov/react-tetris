@@ -15,4 +15,10 @@ export const StyledDisplay = styled.div`
   background: #000;
   font-family: Pixel, Arial, Helvetica, sans-serif;
   font-size: ${props => (props.gameOver ? '1.7rem' : '1.3rem')};
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 5px 20px;
+    font-size: 0.8rem;
+  }
 `;

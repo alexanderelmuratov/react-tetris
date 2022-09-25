@@ -21,4 +21,10 @@ export const StyledStartButton = styled.div`
     color: #000;
     background: #fff;
   }
+
+  @media (max-width: 768px) {
+    width: 40%;
+    font-size: 0.8rem;
+    padding: 5px 20px;
+  }
 `;
