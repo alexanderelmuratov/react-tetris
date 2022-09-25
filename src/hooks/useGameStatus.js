@@ -1,11 +1,12 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useMemo, useCallback } from 'react';
 
 export const useGameStatus = rowsCleared => {
   const [score, setScore] = useState(0);
   const [rows, setRows] = useState(0);
   const [level, setLevel] = useState(0);
 
-  const linePoints = React.memo([40, 100, 300, 1200]);
+  // const linePoints = [40, 100, 300, 1200];
+  const linePoints = useMemo(() => [40, 100, 300, 1200], []);
 
   const calcScore = useCallback(() => {
     if (rowsCleared > 0) {
