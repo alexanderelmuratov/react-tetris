@@ -31,12 +31,11 @@ const Tetris = () => {
   });
 
   console.log('re-render');
+  console.log('rowsCleared', rowsCleared);
 
   const movePlayer = dir => {
-    if (!checkCollision(player, stage, { x: dir, y: 0 })) {
-      // updatePlayerPos({ x: dir / 2, y: 0 });
+    if (!checkCollision(player, stage, { x: dir, y: 0 }))
       updatePlayerPos({ x: dir, y: 0 });
-    }
   };
 
   const startGame = () => {
@@ -54,13 +53,12 @@ const Tetris = () => {
   const drop = () => {
     if (rows > (level + 1) * 10) {
       setLevel(prev => prev + 1);
-      setDropTime(1000 / (level + 1) + 200);
+      setDropTime(1000 / (level + 1) + 300);
     }
 
-    if (!checkCollision(player, stage, { x: 0, y: 1 })) {
-      // updatePlayerPos({ x: 0, y: 0.5, collided: false });
+    if (!checkCollision(player, stage, { x: 0, y: 1 }))
       updatePlayerPos({ x: 0, y: 1, collided: false });
-    } else {
+    else {
       if (player.pos.y < 1) {
         console.log('Game Over!!!');
         setGameOver(true);
@@ -72,33 +70,29 @@ const Tetris = () => {
   };
 
   const keyUp = ({ keyCode }) => {
-    if (gameOver) return;
-    if (keyCode === 40) {
-      console.log('interval on');
-      setDropTime(1000 / (level + 1) + 200);
+    if (!gameOver) {
+      if (keyCode === 40) {
+        setDropTime(1000 / (level + 1) + 300);
+      }
     }
   };
 
   const dropPlayer = () => {
-    console.log('interval off');
     setDropTime(null);
     drop();
   };
 
   const move = ({ keyCode }) => {
-    if (gameOver) return;
-
-    if (keyCode === 37) {
-      movePlayer(-1);
-    }
-    if (keyCode === 39) {
-      movePlayer(1);
-    }
-    if (keyCode === 40) {
-      dropPlayer();
-    }
-    if (keyCode === 38) {
-      playerRotate(stage, 1);
+    if (!gameOver) {
+      if (keyCode === 37) {
+        movePlayer(-1);
+      } else if (keyCode === 39) {
+        movePlayer(1);
+      } else if (keyCode === 40) {
+        dropPlayer();
+      } else if (keyCode === 38) {
+        playerRotate(stage, 1);
+      }
     }
   };
 
