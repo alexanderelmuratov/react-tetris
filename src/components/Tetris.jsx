@@ -34,8 +34,8 @@ const Tetris = () => {
 
   const movePlayer = dir => {
     if (!checkCollision(player, stage, { x: dir, y: 0 })) {
-      updatePlayerPos({ x: dir / 2, y: 0 });
-      // updatePlayerPos({ x: dir, y: 0 });
+      // updatePlayerPos({ x: dir / 2, y: 0 });
+      updatePlayerPos({ x: dir, y: 0 });
     }
   };
 
@@ -58,8 +58,8 @@ const Tetris = () => {
     }
 
     if (!checkCollision(player, stage, { x: 0, y: 1 })) {
-      updatePlayerPos({ x: 0, y: 0.5, collided: false });
-      // updatePlayerPos({ x: 0, y: 1, collided: false });
+      // updatePlayerPos({ x: 0, y: 0.5, collided: false });
+      updatePlayerPos({ x: 0, y: 1, collided: false });
     } else {
       if (player.pos.y < 1) {
         console.log('Game Over!!!');
