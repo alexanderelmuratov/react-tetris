@@ -6,6 +6,8 @@ export const useStage = (player, resetPlayer) => {
   const [stage, setStage] = useState(createStage());
   const [rowsCleared, setRowsCleared] = useState(0);
 
+  console.log(rowsCleared);
+
   useEffect(() => {
     setRowsCleared(0);
 
