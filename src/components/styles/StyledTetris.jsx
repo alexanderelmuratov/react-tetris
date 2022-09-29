@@ -44,6 +44,7 @@ export const StyledTetris = styled.div`
       max-width: 100%;
       min-height: 104px;
       display: flex;
+      /* flex-direction: column; */
       flex-wrap: wrap;
       justify-content: space-around;
       align-items: center;

@@ -24,7 +24,7 @@ export const StyledStartButton = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 45%;
+    width: 48%;
     font-size: 0.7rem;
     padding: 5px 20px;
     margin: 0 0 20px 0;
