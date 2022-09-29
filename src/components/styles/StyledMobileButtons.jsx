@@ -7,6 +7,9 @@ export const StyledMobileButtons = styled.div`
   flex-wrap: wrap;
 
   button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 20%;
     height: 55px;
     /* margin: 10px 0; */

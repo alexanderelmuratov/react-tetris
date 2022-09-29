@@ -15,7 +15,7 @@ export const StyledStage = styled.div`
 
   @media (max-width: 768px) {
     /* background: #333; */
-    max-width: 65vw;
+    max-width: 70vw;
     grid-template-rows: repeat(
       ${props => props.height},
       calc(65vw / ${props => props.width})
