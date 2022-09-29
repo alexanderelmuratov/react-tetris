@@ -4,6 +4,7 @@ export const StyledStartButton = styled.div`
   box-sizing: border-box;
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   min-height: 30px;
   padding: 20px;
@@ -23,8 +24,9 @@ export const StyledStartButton = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 40%;
-    font-size: 0.8rem;
+    width: 35%;
+    font-size: 0.7rem;
     padding: 5px 20px;
+    margin: 0 0 10px 0;
   }
 `;

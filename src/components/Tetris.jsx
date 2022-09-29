@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import useSound from 'use-sound';
-import mySound from '../../src/audio/сalinka.mp3';
+import mySound from '../../src/audio/kalinka.mp3';
 
 import { createStage, checkCollision } from '../gameHelpers';
 
@@ -114,28 +114,28 @@ const Tetris = () => {
           {gameOver ? (
             <Display gameOver={gameOver} text="Game Over" />
           ) : (
-            <div>
+            <>
               <Display text={`Score: ${score}`} />
               <Display text={`Rows: ${rows}`} />
               <Display text={`Level: ${level}`} />
-            </div>
+            </>
           )}
           <StartButton callback={startGame} />
         </aside>
-        <StyledMobileButtons>
-          <button onClick={() => move({ keyCode: 37 })}>Left</button>
-          <button onClick={() => move({ keyCode: 39 })}>Right</button>
-          <button onClick={() => move({ keyCode: 38 })}>Up</button>
-          <button
-            onClick={() => {
-              move({ keyCode: 40 });
-              keyUp({ keyCode: 40 });
-            }}
-          >
-            Down
-          </button>
-        </StyledMobileButtons>
       </StyledTetris>
+      <StyledMobileButtons>
+        <button onClick={() => move({ keyCode: 37 })}>Left</button>
+        <button onClick={() => move({ keyCode: 39 })}>Right</button>
+        <button onClick={() => move({ keyCode: 38 })}>Up</button>
+        <button
+          onClick={() => {
+            move({ keyCode: 40 });
+            keyUp({ keyCode: 40 });
+          }}
+        >
+          Down
+        </button>
+      </StyledMobileButtons>
     </StyledTetrisWrapper>
   );
 };
