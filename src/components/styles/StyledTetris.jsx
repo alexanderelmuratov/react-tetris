@@ -37,14 +37,11 @@ export const StyledTetris = styled.div`
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    /* padding-top: 10px;
-    padding-bottom: 10px; */
 
     aside {
       max-width: 100%;
       min-height: 104px;
       display: flex;
-      /* flex-direction: column; */
       flex-wrap: wrap;
       justify-content: space-around;
       align-items: center;

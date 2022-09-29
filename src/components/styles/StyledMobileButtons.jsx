@@ -12,7 +12,6 @@ export const StyledMobileButtons = styled.div`
     align-items: center;
     width: 20%;
     height: 55px;
-    /* margin: 10px 0; */
     border-radius: 50px;
     outline: none;
     border: 0px;

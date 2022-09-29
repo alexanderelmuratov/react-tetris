@@ -16,7 +16,6 @@ import StartButton from './StartButton';
 import { MobileButtons } from './MobileButtons';
 
 import { StyledTetrisWrapper, StyledTetris } from './styles/StyledTetris';
-// import { StyledMobileButtons } from './styles/StyledMobileButtons';
 
 const Tetris = () => {
   const [dropTime, setDropTime] = useState(null);
@@ -125,19 +124,6 @@ const Tetris = () => {
         </aside>
       </StyledTetris>
       <MobileButtons move={move} keyUp={keyUp} />
-      {/* <StyledMobileButtons>
-        <button onClick={() => move({ keyCode: 37 })}>Left</button>
-        <button onClick={() => move({ keyCode: 39 })}>Right</button>
-        <button onClick={() => move({ keyCode: 38 })}>Up</button>
-        <button
-          onClick={() => {
-            move({ keyCode: 40 });
-            keyUp({ keyCode: 40 });
-          }}
-        >
-          Down
-        </button>
-      </StyledMobileButtons> */}
     </StyledTetrisWrapper>
   );
 };

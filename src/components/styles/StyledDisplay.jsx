@@ -20,6 +20,5 @@ export const StyledDisplay = styled.div`
     width: 48%;
     padding: 5px 20px;
     font-size: 0.8rem;
-    /* margin: 0 0 10px 0; */
   }
 `;
