@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const StyledMobileButtons = styled.div`
   display: flex;
   width: 70%;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
 
   button {
