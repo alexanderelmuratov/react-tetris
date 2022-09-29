@@ -6,7 +6,7 @@ export const StyledDisplay = styled.div`
   justify-content: ${props => (props.gameOver ? 'center' : 'flex-start')};
   align-items: center;
   width: 100%;
-  min-height: 30px;
+  height: 30px;
   padding: 20px;
   margin: 0 0 20px 0;
   border: 4px solid #333;
@@ -20,6 +20,6 @@ export const StyledDisplay = styled.div`
     width: 45%;
     padding: 5px 20px;
     font-size: 0.8rem;
-    margin: 0 0 10px 0;
+    /* margin: 0 0 10px 0; */
   }
 `;

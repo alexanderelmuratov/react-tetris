@@ -6,7 +6,7 @@ export const StyledStartButton = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 30px;
+  height: 30px;
   padding: 20px;
   border: none;
   border-radius: 20px;
@@ -27,6 +27,6 @@ export const StyledStartButton = styled.div`
     width: 45%;
     font-size: 0.7rem;
     padding: 5px 20px;
-    margin: 0 0 10px 0;
+    margin: 0 0 20px 0;
   }
 `;
