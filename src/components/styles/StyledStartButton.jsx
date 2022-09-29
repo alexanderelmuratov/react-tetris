@@ -6,7 +6,7 @@ export const StyledStartButton = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 30px;
+  height: 40px;
   padding: 20px;
   border: none;
   border-radius: 20px;
