@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/react-tetris/static/css/main.feca43b4.css",
-    "main.js": "/react-tetris/static/js/main.d679a6a6.js",
+    "main.js": "/react-tetris/static/js/main.879146ad.js",
     "static/js/845.db5b7528.chunk.js": "/react-tetris/static/js/845.db5b7528.chunk.js",
     "static/js/787.7e64f256.chunk.js": "/react-tetris/static/js/787.7e64f256.chunk.js",
-    "static/media/kalinka.mp3": "/react-tetris/static/media/kalinka.526a526f22fddbb9944c.mp3",
+    "static/media/сalinka.mp3": "/react-tetris/static/media/сalinka.526a526f22fddbb9944c.mp3",
     "static/media/stars.jpg": "/react-tetris/static/media/stars.776b8968297a23ee86c8.jpg",
     "static/media/Pixel-LCD-7.woff": "/react-tetris/static/media/Pixel-LCD-7.63d9c15192fdeab6d3a6.woff",
     "index.html": "/react-tetris/index.html",
     "main.feca43b4.css.map": "/react-tetris/static/css/main.feca43b4.css.map",
-    "main.d679a6a6.js.map": "/react-tetris/static/js/main.d679a6a6.js.map",
+    "main.879146ad.js.map": "/react-tetris/static/js/main.879146ad.js.map",
     "845.db5b7528.chunk.js.map": "/react-tetris/static/js/845.db5b7528.chunk.js.map",
     "787.7e64f256.chunk.js.map": "/react-tetris/static/js/787.7e64f256.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.feca43b4.css",
-    "static/js/main.d679a6a6.js"
+    "static/js/main.879146ad.js"
   ]
 }
