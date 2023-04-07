@@ -31,9 +31,6 @@ const Tetris = () => {
     loop: true,
   });
 
-  console.log('re-render');
-  console.log('rowsCleared', rowsCleared);
-
   const movePlayer = dir => {
     if (!checkCollision(player, stage, { x: dir, y: 0 }))
       updatePlayerPos({ x: dir, y: 0 });
